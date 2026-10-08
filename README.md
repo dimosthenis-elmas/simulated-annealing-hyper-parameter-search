@@ -6,11 +6,11 @@
 <p align="left">
 <img src="simulated_annealing_HP_search/results.png" alt="results.png" width="1000">
 </p>
-<h3>Comparison to other methods</h3>
+<h4>Comparison to other methods. (For 100 runs with random problems)</h4>
 <br>
 
 <br>
 <p align="left">
 <img src="simulated_annealing_HP_search/cells_visited.png" alt="results.png" width="1000">
 </p>
-<h3>Cells visited noted in blue rectangles</h3>
+<h4>Cells visited noted in blue rectangles</h4>
