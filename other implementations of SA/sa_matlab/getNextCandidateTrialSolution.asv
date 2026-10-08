@@ -1,0 +1,36 @@
+function [ next ] = getNextCandidateTrialSolution(init_c,initT,currT,b,diff)
+
+%UNTITLED2 Summary of this function goes here
+%   Detailed explanation goes here
+
+%c = round(init_c*exp(-diff/(currT)));
+lim = 5;
+c=init_c*((currT)/initT);
+
+next(1)=b(1)+(c*(-1 + (1+1)*rand(1)));
+%while abs(next(1))>lim
+%    next(1)=b(1)+(c*(-1 + (1+1)*rand(1)));
+%end
+
+next(2)=b(2)+(c*(-1 + (1+1)*rand(1)));
+%while abs(next(2))>lim
+%    next(2)=b(2)+(c*(-1 + (1+1)*rand(1)));
+%end
+    
+next(3)=b(3)+(c*(-1 + (1+1)*rand(1)));
+%while abs(next(3))>lim
+%    next(3)=b(3)+(c*(-1 + (1+1)*rand(1)));
+%end
+
+next(4)=b(4)+(c*(-1 + (1+1)*rand(1)));
+%while abs(next(4))>lim
+%    next(4)=b(4)+(c*(-1 + (1+1)*rand(1)));
+%end
+
+next(5)=b(5)+(c*(-1 + (1+1)*rand(1)));
+%while abs(next(5))>lim
+%    next(5)=b(5)+(c*(-1 + (1+1)*rand(1)));
+%end
+
+end
+

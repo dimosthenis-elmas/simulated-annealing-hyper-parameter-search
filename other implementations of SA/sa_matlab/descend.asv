@@ -1,0 +1,22 @@
+function [C] = descend(evaluateFunction,calculateDerivative,A,b,e)
+
+%This function follows the direction of the derivative calculated at b
+%to obtain a slightly smaller value than evaluateFunction(A,b) if possible.
+%Thus the function 'descends' slightly from 
+%   Detailed explanation goes here
+C=cell(1,2);
+for i = 1:5
+      d(i)=calculateDerivative(evaluateFunction,A,b,i);
+end
+
+for i = 1:5
+      if d(i)<=0
+          d(i)=-d(i);
+      end
+end
+
+C{1,1} = b - e*d;
+C{1,2} = evaluateFunction(A,C{1,1});
+
+end
+
